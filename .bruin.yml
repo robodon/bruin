@@ -1,0 +1,27 @@
+default_environment: default
+environments:
+    DEVELOPMENT:
+        connections:
+            duckdb:
+                - name: dev_duckdb
+                  path: /Users/robin/Desktop/bruin_test/bruin/dev_duckdb.db
+    PROD:
+        connections:
+            duckdb:
+                - name: prod_duckdb
+                  path: /Users/robin/Desktop/bruin_test/bruin/prod_duckdb.db
+    PreProd:
+        connections:
+            duckdb:
+                - name: preprod_duckdb
+                  path: /Users/robin/Desktop/bruin_test/bruin/preprod_duckdb.db
+    default:
+        connections:
+            duckdb:
+                - name: duckdb-default
+                  path: /Users/robin/Desktop/bruin_test/bruin/duckdb.db
+            chess:
+                - name: chess-default
+                  players:
+                    - MagnusCarlsen
+                    - Hikaru
