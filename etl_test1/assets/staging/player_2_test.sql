@@ -1,13 +1,13 @@
 /* @bruin
 
-name: dataset.player_stats
+name: staging.player_2_test
 type: duckdb.sql
 
 materialization:
   type: table
 
 depends:
-  - dataset.players
+  - dataset.player_stats
 
 columns:
   - name: name
@@ -31,6 +31,8 @@ custom_checks:
 
 @bruin */
 
-SELECT name, count(*) AS player_count
-FROM dataset.players
+SELECT name
+  ,count(*) AS player_count
+  ,UPPER(name) as name_upper
+FROM dataset.player_stats
 GROUP BY 1
