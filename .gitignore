@@ -5,3 +5,4 @@ __pycache__/
 *.py[cod]
 *duckdb*.db
 .bruin.yml
+*Sample.csv*
