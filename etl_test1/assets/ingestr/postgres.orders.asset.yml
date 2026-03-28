@@ -1,0 +1,7 @@
+name: dataset.postgres_orders
+type: ingestr
+
+parameters:
+  destination: duckdb
+  source_connection: postgres1
+  source_table: public.orders

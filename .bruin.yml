@@ -10,7 +10,6 @@ environments:
                   players:
                     - MagnusCarlsen
                     - Hikaru
-    
     PROD:
         connections:
             duckdb:
@@ -23,6 +22,16 @@ environments:
                   path: /Users/robin/Desktop/bruin_test/bruin/preprod_duckdb.db
     default:
         connections:
+            postgres:
+                - name: postgres1
+                  username: postgres
+                  password: admin
+                  host: localhost
+                  port: 5433
+                  database: postgres
+                  schema: public
+                  pool_max_conns: 10
+                  ssl_mode: allow
             duckdb:
                 - name: duckdb-default
                   path: /Users/robin/Desktop/bruin_test/bruin/duckdb.db
