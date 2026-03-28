@@ -3,5 +3,49 @@ type: ingestr
 
 parameters:
   destination: duckdb
+  incremental_strategy: append
   source_connection: chess-default
   source_table: profiles
+
+columns:
+  - name: last_online
+    type: TIMESTAMP
+  - name: joined
+    type: TIMESTAMP
+  - name: avatar
+    type: VARCHAR
+  - name: player_id
+    type: BIGINT
+    primary_key: true
+  - name: aid
+    type: VARCHAR
+  - name: url
+    type: VARCHAR
+  - name: name
+    type: VARCHAR
+  - name: username
+    type: VARCHAR
+  - name: title
+    type: VARCHAR
+  - name: followers
+    type: BIGINT
+  - name: country
+    type: VARCHAR
+  - name: location
+    type: VARCHAR
+  - name: status
+    type: VARCHAR
+  - name: is_streamer
+    type: BOOLEAN
+  - name: verified
+    type: BOOLEAN
+  - name: league
+    type: VARCHAR
+  - name: streaming_platforms
+    type: VARCHAR
+  - name: _dlt_load_id
+    type: VARCHAR
+  - name: _dlt_id
+    type: VARCHAR
+  - name: twitch_url
+    type: VARCHAR
