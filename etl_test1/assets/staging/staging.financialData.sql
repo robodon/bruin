@@ -8,9 +8,9 @@ materialization:
   strategy: create+replace
 
 depends:
-  - staging.asset.financialData
+  - dataset.financial_data
 
 @bruin */
 
 SELECT *
-FROM staging.asset.financialData
+FROM dataset.financial_data

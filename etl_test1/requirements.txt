@@ -1,0 +1,14 @@
+duckdb==1.5.1
+    # via -r requirements.txt
+numpy==2.4.3
+    # via pandas
+pandas==3.0.1
+    # via -r requirements.txt
+polars==1.39.3
+    # via -r requirements.txt
+polars-runtime-32==1.39.3
+    # via polars
+python-dateutil==2.9.0.post0
+    # via pandas
+six==1.17.0
+    # via python-dateutil
