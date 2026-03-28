@@ -5,6 +5,16 @@ environments:
             duckdb:
                 - name: duckdb-default
                   path: /Users/robin/Desktop/bruin_test/bruin/dev_duckdb.db
+            postgres:
+                - name: postgres1
+                  username: postgres
+                  password: admin
+                  host: localhost
+                  port: 5433
+                  database: postgres
+                  schema: public
+                  pool_max_conns: 10
+                  ssl_mode: allow
             chess:
                 - name: chess-default
                   players:
@@ -15,11 +25,31 @@ environments:
             duckdb:
                 - name: prod_duckdb
                   path: /Users/robin/Desktop/bruin_test/bruin/prod_duckdb.db
+            postgres:
+                - name: postgres1
+                  username: postgres
+                  password: admin
+                  host: localhost
+                  port: 5433
+                  database: postgres
+                  schema: public
+                  pool_max_conns: 10
+                  ssl_mode: allow
     PreProd:
         connections:
             duckdb:
                 - name: preprod_duckdb
                   path: /Users/robin/Desktop/bruin_test/bruin/preprod_duckdb.db
+            postgres:
+                - name: postgres1
+                  username: postgres
+                  password: admin
+                  host: localhost
+                  port: 5433
+                  database: postgres
+                  schema: public
+                  pool_max_conns: 10
+                  ssl_mode: allow
     default:
         connections:
             postgres:
@@ -40,3 +70,4 @@ environments:
                   players:
                     - MagnusCarlsen
                     - Hikaru
+        
