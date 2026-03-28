@@ -3,7 +3,7 @@ logs/runs
 logs/*.log
 __pycache__/
 *.py[cod]
-*duckdb*.db
+*duckdb*
 .bruin.yml
 *Sample.csv*
 .tmp_dagster_home_*
