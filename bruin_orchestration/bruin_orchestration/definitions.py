@@ -1,4 +1,4 @@
-from dagster import op, job, schedule, Definitions, In, Nothing
+from dagster import op, job, schedule, Definitions, In, Nothing, multiprocess_executor
 import subprocess
 import os
 import glob
